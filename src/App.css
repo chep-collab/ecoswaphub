@@ -1,0 +1,110 @@
+body {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5; /* Light gray background for contrast */
+  color: #333; /* Dark text for readability */
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+/* AppBar styling */
+.MuiAppBar-root {
+  background: linear-gradient(90deg, #2ecc71, #27ae60); /* Green gradient for sustainability vibe */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.MuiTypography-root {
+  color: #fff; /* White text on AppBar */
+}
+
+.MuiButton-root {
+  color: #fff;
+  text-transform: none;
+  font-weight: 500;
+}
+
+.MuiButton-root:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Container styling */
+.MuiContainer-root {
+  background-color: #fff; /* White background for content */
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Card styling for items */
+.MuiCard-root {
+  background-color: #e8f5e9; /* Light green for cards */
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* DataGrid styling */
+.MuiDataGrid-root {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.MuiDataGrid-cell, .MuiDataGrid-columnHeader {
+  color: #333 !important; /* Dark text for visibility */
+}
+
+.MuiDataGrid-row:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray for alternating rows */
+}
+
+/* Buttons */
+.MuiButton-contained {
+  background-color: #27ae60; /* Green buttons */
+  color: #fff;
+  text-transform: none;
+}
+
+.MuiButton-contained:hover {
+  background-color: #219653;
+}
+
+/* Typography */
+.MuiTypography-h4, .MuiTypography-h3 {
+  color: #2ecc71; /* Green headings */
+}
+
+.MuiTypography-h6 {
+  color: #666; /* Gray for subtitles */
+}
+
+/* Inputs */
+.MuiTextField-root {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.MuiInputBase-input {
+  color: #333 !important;
+}
