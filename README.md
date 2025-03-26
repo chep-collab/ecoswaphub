@@ -1,54 +1,39 @@
 # React + TypeScript + Vite
+# EcoSwapHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sustainability-focused web app built with React.js to facilitate item swapping, reducing CO2 emissions through community-driven exchanges.
 
-Currently, two official plugins are available:
+## Live Demo
+- **Vercel**: [https://ecoswaphub.vercel.app](https://ecoswaphub.vercel.app)
+- **GitHub Pages**: [https://chep-collab.github.io/ecoswaphub/](https://chep-collab.github.io/ecoswaphub/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Item listing and search functionality.
+- Swap request system to connect users.
+- Community profile page showing users who have swapped items and their CO2 savings.
+- Interactive map using Leaflet and Mapbox to display item locations.
+- Responsive design with Material-UI.
 
-## Expanding the ESLint configuration
+## Tech Stack
+- **Frontend**: React.js, TypeScript, Material-UI
+- **Build Tool**: Vite
+- **Deployment**: Vercel, GitHub Pages
+- **Map**: Leaflet, Mapbox
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
+1. Clone the repository: `git clone https://github.com/chep-collab/ecoswaphub.git`
+2. Install dependencies: `npm install`
+3. Run the app: `npm run dev`
+4. Open `http://localhost:5179` in your browser.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Challenges and Solutions
+- **Challenge**: Issues with Material-UI icon imports.
+  - **Solution**: Used a fallback icon and simplified Vite configuration.
+- **Challenge**: Backend connectivity issues.
+  - **Solution**: Converted the app to a frontend-only app using local state.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## Future Enhancements
+- Add localStorage to persist data across page refreshes.
+- Enhance the swap request flow with real-time updates.
+- Integrate user authentication (simulated in the frontend).
 ```
