@@ -17,19 +17,19 @@ const App: React.FC = () => {
           <Typography variant="h6" style={{ flexGrow: 1, fontWeight: 'bold' }}>
             EcoSwapHub
           </Typography>
-          <Button color="inherit" component={Link} to="/ecoswaphub/">Home</Button>
-          <Button color="inherit" component={Link} to="/ecoswaphub/items">Items</Button>
-          <Button color="inherit" component={Link} to="/ecoswaphub/swaps">Swaps</Button>
-          <Button color="inherit" component={Link} to="/ecoswaphub/profile">Profile</Button>
+          <Button color="inherit" component={Link} to="/">Home</Button>
+          <Button color="inherit" component={Link} to="/items">Items</Button>
+          <Button color="inherit" component={Link} to="/swaps">Swaps</Button>
+          <Button color="inherit" component={Link} to="/profile">Profile</Button>
         </Toolbar>
       </AppBar>
       <Container maxWidth="lg">
         <Box my={4}>
           <Routes>
-            <Route path="/ecoswaphub/" element={<Home />} />
-            <Route path="/ecoswaphub/items" element={<Items />} />
-            <Route path="/ecoswaphub/swaps" element={<Swaps />} />
-            <Route path="/ecoswaphub/profile" element={<Profile />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/items" element={<Items />} />
+            <Route path="/swaps" element={<Swaps />} />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
         </Box>
       </Container>
