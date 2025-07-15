@@ -1,7 +1,7 @@
 
-### 📝 Refined `README.md` for `ecoswaphub`
+EcoSwapHub is a modern web platform designed to foster sustainable living through community-powered item exchange. Built with React, TypeScript, and Vite, it offers a responsive UI for listing, browsing, and swapping goods—reducing waste while connecting local users in meaningful, eco-conscious ways.
+🔗 Live Demo: [ecoswaphub-hc31.vercel.app](https://ecoswaphub-hc31.vercel.app)
 
-```markdown
 # ♻️ EcoSwapHub
 
 A modern web platform for sustainable item exchange, built with **React**, **TypeScript**, and **Vite**. EcoSwapHub empowers communities to swap goods, reduce waste, and promote eco-friendly living.
