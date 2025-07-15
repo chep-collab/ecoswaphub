@@ -1,6 +1,3 @@
-Love the momentum, Mercy! I checked out your `ecoswaphub` repo—it’s a **React + TypeScript + Vite** project with a clean structure and backend folder included. Let’s give it a recruiter-ready README that highlights your architecture and sets the stage for deployment.
-
----
 
 ### 📝 Refined `README.md` for `ecoswaphub`
 
